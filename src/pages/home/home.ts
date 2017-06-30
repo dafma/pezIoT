@@ -14,7 +14,7 @@ export class HomePage {
         this.data.username = '';
         this.data.response = '';
 
-        this.http = http;
+       
  	}
 
 	 submit() {
@@ -57,7 +57,7 @@ export class HomePage {
     prenderled2(){
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');    
-    let postParams = "/status1=1";
+    let postParams = "/status2=1";
 
     this.http.post("http://192.168.100.9/status2=1", postParams)
     .subscribe(data=>{
@@ -70,7 +70,7 @@ export class HomePage {
     apagarled2(){
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');    
-    let postParams = "/status1=1";
+    let postParams = "/status2=0";
 
     this.http.post("http://192.168.100.9/status2=0", postParams)
     .subscribe(data=>{
@@ -82,7 +82,7 @@ export class HomePage {
     prenderled3(){
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');    
-    let postParams = "/status1=1";
+    let postParams = "/status3=1";
 
     this.http.post("http://192.168.100.9/status3=1", postParams)
     .subscribe(data=>{
@@ -95,7 +95,7 @@ export class HomePage {
     apagarled3(){
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');    
-    let postParams = "/status1=1";
+    let postParams = "/status3=1";
 
     this.http.post("http://192.168.100.9/status3=0", postParams)
     .subscribe(data=>{
@@ -107,7 +107,7 @@ export class HomePage {
     prenderled4(){
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');    
-    let postParams = "/status1=1";
+    let postParams = "/status4=1";
 
     this.http.post("http://192.168.100.9/status4=1", postParams)
     .subscribe(data=>{
@@ -120,7 +120,7 @@ export class HomePage {
     apagarled4(){
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');    
-    let postParams = "/status1=1";
+    let postParams = "/status4=0";
 
     this.http.post("http://192.168.100.9/status4=0", postParams)
     .subscribe(data=>{
